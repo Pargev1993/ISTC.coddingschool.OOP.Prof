@@ -259,3 +259,4 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/ISTC.codingschool.OOP.Reflection1/Properties/AssemblyInfo.cs
