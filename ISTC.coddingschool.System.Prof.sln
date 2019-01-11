@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.codingschool.OOP.Refle
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.codingschool.OOP.Reflection.Assembly", "ISTC.codingschool.OOP.Reflection.Assembly\ISTC.codingschool.OOP.Reflection.Assembly.csproj", "{55EB3FE4-28DA-40DB-AD3D-53B8060692AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionOfProjectMyCar", "ReflectionOfProjectMyCar\ReflectionOfProjectMyCar.csproj", "{CF9E9D96-0DEA-420F-B762-9F7A3FCB2901}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionOfProject.Assembly,MyCar", "ReflectionOfProjectMyCar\ReflectionOfProject.Assembly,MyCar.csproj", "{CF9E9D96-0DEA-420F-B762-9F7A3FCB2901}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
