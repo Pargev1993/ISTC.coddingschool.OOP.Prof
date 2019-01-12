@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.codingschool.OOP.Refle
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionOfProject.Assembly,MyCar", "ReflectionOfProjectMyCar\ReflectionOfProject.Assembly,MyCar.csproj", "{CF9E9D96-0DEA-420F-B762-9F7A3FCB2901}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.codingschool.OOP.Attributes", "ISTC.codingschool.OOP.Attributes\ISTC.codingschool.OOP.Attributes.csproj", "{CD72E7BA-495D-430A-AFDB-2B1DA4ACC7CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{CF9E9D96-0DEA-420F-B762-9F7A3FCB2901}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF9E9D96-0DEA-420F-B762-9F7A3FCB2901}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF9E9D96-0DEA-420F-B762-9F7A3FCB2901}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD72E7BA-495D-430A-AFDB-2B1DA4ACC7CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD72E7BA-495D-430A-AFDB-2B1DA4ACC7CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD72E7BA-495D-430A-AFDB-2B1DA4ACC7CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD72E7BA-495D-430A-AFDB-2B1DA4ACC7CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
