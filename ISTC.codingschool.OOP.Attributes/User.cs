@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ISTC.codingschool.OOP.Attributes
 {
-    [AttInfo("Coustomor",Code =15)]
+    [AttInfo(Code =15,Name ="Coustomer")]
+    [AttributeUsage(AttributeTargets.Class)]
   public  class User:System.Attribute
     {
         public string Name { get; set; }
