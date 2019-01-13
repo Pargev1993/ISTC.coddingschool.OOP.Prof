@@ -8,9 +8,8 @@ namespace ISTC.codingschool.OOP.Attributes
 {
     class AttInfo:System.Attribute
     {
-        private string v;
 
-        public string Name { get; set; }
+        public string Name { get; set; } = "Pargev";
         public int Code { get; set; }
         public AttInfo() { }
         public AttInfo(string name,int Code)
