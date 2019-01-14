@@ -27,6 +27,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ISTC.coingschool.OOP.Prof.G
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exemple 1", "ISTC.Codingschool.OOP.prof.GC\Exemple 1\Exemple 1.csproj", "{2D20C106-75B0-451F-ABCB-A933DA0C8D8C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exemple 2", "ISTC.Codingschool.OOP.prof.GC\ConsoleApp1\Exemple 2.csproj", "{1DC42D8E-1977-431E-BBF4-CD11492586C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,10 @@ Global
 		{2D20C106-75B0-451F-ABCB-A933DA0C8D8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D20C106-75B0-451F-ABCB-A933DA0C8D8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D20C106-75B0-451F-ABCB-A933DA0C8D8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DC42D8E-1977-431E-BBF4-CD11492586C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DC42D8E-1977-431E-BBF4-CD11492586C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DC42D8E-1977-431E-BBF4-CD11492586C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DC42D8E-1977-431E-BBF4-CD11492586C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,6 +87,7 @@ Global
 		{174C4FCB-0817-49A0-B2A7-4435E15CA888} = {4ECFF6AD-6EF3-49D8-B352-F33BD6293466}
 		{796B22F8-B1D0-44DD-94B7-68F6CDBE4647} = {4ECFF6AD-6EF3-49D8-B352-F33BD6293466}
 		{2D20C106-75B0-451F-ABCB-A933DA0C8D8C} = {95053C53-A9D1-4605-8955-4756CEC65D6E}
+		{1DC42D8E-1977-431E-BBF4-CD11492586C7} = {95053C53-A9D1-4605-8955-4756CEC65D6E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3AA24A9-8C58-4581-9EE0-A6728A2AD5BC}
