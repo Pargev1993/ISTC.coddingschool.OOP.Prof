@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ISTC.codingschool.OOP.destructor")]
+[assembly: AssemblyTitle("Exemple 2")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ISTC.codingschool.OOP.destructor")]
+[assembly: AssemblyProduct("Exemple 2")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("98d0fd8c-528a-43b5-86f2-5576c361403a")]
+[assembly: Guid("796b22f8-b1d0-44dd-94b7-68f6cdbe4647")]
 
 // Version information for an assembly consists of the following four values:
 //

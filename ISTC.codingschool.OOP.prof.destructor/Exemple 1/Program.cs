@@ -17,7 +17,7 @@ namespace ConsoleApplication1
 
         ~MyClass()
         {
-            Console.WriteLine("object {0} destroyed", k);
+            Console.WriteLine("object {0} destroyed ", k);
         }
 
         public void objectGenerator(int i)

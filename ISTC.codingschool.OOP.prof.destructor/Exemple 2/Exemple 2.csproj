@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{98D0FD8C-528A-43B5-86F2-5576C361403A}</ProjectGuid>
+    <ProjectGuid>{796B22F8-B1D0-44DD-94B7-68F6CDBE4647}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ISTC.codingschool.OOP.destructor</RootNamespace>
-    <AssemblyName>ISTC.codingschool.OOP.destructor</AssemblyName>
+    <RootNamespace>Exemple_2</RootNamespace>
+    <AssemblyName>Exemple 2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
