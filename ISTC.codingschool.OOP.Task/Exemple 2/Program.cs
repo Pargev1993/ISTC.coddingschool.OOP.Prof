@@ -46,17 +46,17 @@ namespace Exemple_2
         public int following { get; set; }
         public DateTime created_at { get; set; }
         public DateTime updated_at { get; set; }
-    
-        public void CallGithubUzer( )
+
+        public void CallGithubUzer()
         {
             Console.WriteLine("Please Enter Uzer Name 'Pargev' ");
-           string Name = Console.ReadLine();
+            string Name = Console.ReadLine();
             Console.Clear();
             try
             {
-                if(Name=="Pargev")
+                if (Name == "Pargev")
                 {
-                    Console.WriteLine("login: {0}",login);
+                    Console.WriteLine("login: {0}", login);
                     Console.WriteLine("id: {0}", id);
                     Console.WriteLine("node_id: {0}", node_id);
                     Console.WriteLine("avatar_url: {0}", avatar_url);
@@ -138,33 +138,38 @@ namespace Exemple_2
         static void Main(string[] args)
         {
             string Url = "https://api.github.com/users/Pargev1993";
-            
-           // Task<string> d =new Task<string>( GetDataFromURL,Url);
-           // d.Start();
-            
-            Task<string> s = GetDataFromUrl(Url);
+            Task<string> task = null;
 
-            while (!s.IsCompleted)
+            try
             {
-                Console.ForegroundColor = (ConsoleColor)new Random().Next(1, 15);
-                Console.Write("Loading");
-                for (int i = 0; i < 5; i++)
+                task = GetDataFromUrl(Url);
+                while (!task.IsCompleted)
                 {
-                    Console.Write(".");
-                    Thread.Sleep(200);
+                    Console.ForegroundColor = (ConsoleColor)new Random().Next(1, 15);
+                    Console.Write("Loading");
+                    for (int i = 0; i < 5; i++)
+                    {
+                        Console.Write(".");
+                        Thread.Sleep(200);
+                    }
+                    Console.Clear();
+                    Console.WriteLine("Opertion Complated!!");
+                    Console.ForegroundColor = ConsoleColor.White;
                 }
-                Console.Clear();
+                GitHubUser gitHubUser = JsonConvert.DeserializeObject<GitHubUser>(task.Result);
+                gitHubUser.CallGithubUzer();
             }
-            Console.WriteLine("Opertion Complated!!");
-            Console.ForegroundColor=ConsoleColor.White;
-            GitHubUser gitHubUser = JsonConvert.DeserializeObject<GitHubUser>(s.Result);
-            gitHubUser.CallGithubUzer();
-           
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+
 
             ///Task<string> d = Method(Url);
             //d.Wait();
             //GitHubUser gitHubUser = new GitHubUser();
-           // gitHubUser.CallGithubUzer();
+            // gitHubUser.CallGithubUzer();
 
 
             //Type type = typeof(GitHubUser);
