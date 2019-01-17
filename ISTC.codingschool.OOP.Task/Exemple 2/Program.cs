@@ -102,36 +102,45 @@ namespace Exemple_2
     {
         static string GetDataFromURL(object url)
         {
-            var webRequest = WebRequest.Create(url as string) as HttpWebRequest;
-
-            webRequest.ContentType = "application/json";
-            webRequest.UserAgent = "Nothing";
-
-            using (var s = webRequest.GetResponse().GetResponseStream())
+            try
             {
-                Thread.Sleep(1000);
+                var webRequest = WebRequest.Create(url as string) as HttpWebRequest;
 
-                using (var sr = new StreamReader(s))
+                webRequest.ContentType = "application/json";
+                webRequest.UserAgent = "Nothing";
+
+                using (var s = webRequest.GetResponse().GetResponseStream())
                 {
-                    var contributorsAsJson = sr.ReadToEnd();
-                    return contributorsAsJson;
+                    Thread.Sleep(1000);
+
+                    using (var sr = new StreamReader(s))
+                    {
+                        var contributorsAsJson = sr.ReadToEnd();
+                        return contributorsAsJson;
+                    }
                 }
             }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+
 
         }
         public async static Task<string> GetDataFromUrl(string Url)
         {
-            //Task<string> task = new Task<string>(GetDataFromURL, Url);
-            //task.Start();
-            //await task;
-            return await Task<string>.Factory.StartNew(GetDataFromURL, Url);
-            Thread.Sleep(1000);
+            try
+            {
+                return await Task<string>.Factory.StartNew(GetDataFromURL, Url);
+            }
+            catch (AggregateException ae)
+            {
 
-            //GitHubUser rootobject = JsonConvert.DeserializeObject<GitHubUser>(Url);
-            //Console.WriteLine(rootobject.blog);
-            //Console.WriteLine(rootobject);
-            //File.WriteAllText("person.json", Url);
+                throw new AggregateException(ae.Message);
+            }
+
         }
+
 
 
 
