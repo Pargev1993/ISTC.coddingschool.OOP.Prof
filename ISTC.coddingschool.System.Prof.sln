@@ -35,6 +35,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ISTC.codingschool.OOP.Task"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task.exemple 1", "ISTC.codingschool.OOP.Task\Task.exemple 1\Task.exemple 1.csproj", "{EF447DB0-6E85-4AB9-B480-E07F55AD22CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exemple 2", "ISTC.codingschool.OOP.Task\Exemple 2\Exemple 2.csproj", "{520329F5-675F-4D20-A29C-1F16133F33CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{EF447DB0-6E85-4AB9-B480-E07F55AD22CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF447DB0-6E85-4AB9-B480-E07F55AD22CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF447DB0-6E85-4AB9-B480-E07F55AD22CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{520329F5-675F-4D20-A29C-1F16133F33CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{520329F5-675F-4D20-A29C-1F16133F33CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{520329F5-675F-4D20-A29C-1F16133F33CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{520329F5-675F-4D20-A29C-1F16133F33CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -103,6 +109,7 @@ Global
 		{2D20C106-75B0-451F-ABCB-A933DA0C8D8C} = {95053C53-A9D1-4605-8955-4756CEC65D6E}
 		{1DC42D8E-1977-431E-BBF4-CD11492586C7} = {95053C53-A9D1-4605-8955-4756CEC65D6E}
 		{EF447DB0-6E85-4AB9-B480-E07F55AD22CC} = {60F1FE9B-B613-46FE-AF68-1FB0AF8E804E}
+		{520329F5-675F-4D20-A29C-1F16133F33CB} = {60F1FE9B-B613-46FE-AF68-1FB0AF8E804E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3AA24A9-8C58-4581-9EE0-A6728A2AD5BC}
