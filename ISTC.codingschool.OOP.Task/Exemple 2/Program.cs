@@ -7,11 +7,12 @@ using System.Threading;
 using System.Net;
 using System.IO;
 using Newtonsoft.Json;
+using System.Net.Http;
 
 namespace Exemple_2
 {
 
-    public class Rootobject
+    public class GitHubUser
     {
         public string login { get; set; }
         public int id { get; set; }
@@ -48,9 +49,9 @@ namespace Exemple_2
 
     class Program
     {
-        static string GetDataFromURL(string url)
+        static string GetDataFromURL(object url)
         {
-            var webRequest = WebRequest.Create(url) as HttpWebRequest;
+            var webRequest = WebRequest.Create(url as string) as HttpWebRequest;
 
             webRequest.ContentType = "application/json";
             webRequest.UserAgent = "Nothing";
@@ -67,20 +68,40 @@ namespace Exemple_2
             }
 
         }
-        public static void GetJsonConvert(string s)
+        public async static Task<string> GetJsonConvert(string Url)
         {
+            //Task<string> task = new Task<string>(GetDataFromURL, Url);
+            //task.Start();
+            //await task;
+            return await Task<string>.Factory.StartNew(GetDataFromURL, Url);
 
-            Rootobject  rootobject = JsonConvert.DeserializeObject<Rootobject>(s);
-            Console.WriteLine(rootobject.blog);
-             //Console.WriteLine(d);
-            File.WriteAllText("person.json", s);
+
+            //GitHubUser  rootobject = JsonConvert.DeserializeObject<GitHubUser>(Url);
+            //Console.WriteLine(rootobject.blog);
+            // //Console.WriteLine(d);
+            //File.WriteAllText("person.json", Url);
         }
+
+      
 
         static void Main(string[] args)
         {
             string Url = "https://api.github.com/users/Pargev1993";
-            string s = GetDataFromURL(Url);
-            GetJsonConvert(s);
+            var d = GetDataFromURL(Url);
+            Task<string> s = GetJsonConvert(Url);
+
+
+            s.Wait();
+            Console.WriteLine(s.Result);
+            ///Task<string> d = Method(Url);
+            //d.Wait();
+            GitHubUser gitHubUser = new GitHubUser();
+            
+
+            Console.ReadLine();
+
+
+
 
         }
     }

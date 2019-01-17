@@ -41,6 +41,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ISTC.codingschool.OOP.AsycA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exemple 1", "ISTC.codingschool.OOP.AsycAwait\Exemple 1\Exemple 1.csproj", "{149B1981-2E14-40FD-9D77-2037DB73183C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exemple 2", "ISTC.codingschool.OOP.AsycAwait\Exemple 2\Exemple 2.csproj", "{3B4DC110-F6A5-43DB-9ABA-7E6C1570A0E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -107,6 +109,10 @@ Global
 		{149B1981-2E14-40FD-9D77-2037DB73183C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{149B1981-2E14-40FD-9D77-2037DB73183C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{149B1981-2E14-40FD-9D77-2037DB73183C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B4DC110-F6A5-43DB-9ABA-7E6C1570A0E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B4DC110-F6A5-43DB-9ABA-7E6C1570A0E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B4DC110-F6A5-43DB-9ABA-7E6C1570A0E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B4DC110-F6A5-43DB-9ABA-7E6C1570A0E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -119,6 +125,7 @@ Global
 		{EF447DB0-6E85-4AB9-B480-E07F55AD22CC} = {60F1FE9B-B613-46FE-AF68-1FB0AF8E804E}
 		{520329F5-675F-4D20-A29C-1F16133F33CB} = {60F1FE9B-B613-46FE-AF68-1FB0AF8E804E}
 		{149B1981-2E14-40FD-9D77-2037DB73183C} = {A9A75BA2-FF06-45D5-8266-FFB0FA32C7D0}
+		{3B4DC110-F6A5-43DB-9ABA-7E6C1570A0E4} = {A9A75BA2-FF06-45D5-8266-FFB0FA32C7D0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3AA24A9-8C58-4581-9EE0-A6728A2AD5BC}
