@@ -26,7 +26,7 @@ namespace Exemple_2
         {
             MyClass myClass = new MyClass();
             Task task = myClass.OperationAsync();
-            task.ContinueWith(t => Console.WriteLine("Continue Task"));
+            task.ContinueWith(t => Console.WriteLine("Continue Task!"));
             Console.ReadLine();
 
         }
