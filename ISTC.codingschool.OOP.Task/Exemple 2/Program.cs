@@ -13,6 +13,7 @@ using System.Reflection;
 namespace Exemple_2
 {
 
+
     public class GitHubUser
     {
         public string login { get; set; }
@@ -47,51 +48,51 @@ namespace Exemple_2
         public DateTime created_at { get; set; }
         public DateTime updated_at { get; set; }
 
-        public void CallGithubUzer()
+        public void CallGithubUzer( )
         {
-            
+
             Console.Clear();
             try
             {
-                
-                    Console.WriteLine("login: {0}", login);
-                    Console.WriteLine("id: {0}", id);
-                    Console.WriteLine("node_id: {0}", node_id);
-                    Console.WriteLine("avatar_url: {0}", avatar_url);
-                    Console.WriteLine("gravatar_id: {0}", gravatar_id);
-                    Console.WriteLine("url: {0}", url);
-                    Console.WriteLine("followers_url: {0}", followers_url);
-                    Console.WriteLine("following_url: {0}", following_url);
-                    Console.WriteLine("gists_url: {0}", gists_url);
-                    Console.WriteLine("starred_url: {0}", starred_url);
-                    Console.WriteLine("organizations_url: {0}", organizations_url);
-                    Console.WriteLine("repos_url: {0}", repos_url);
-                    Console.WriteLine("events_url: {0}", events_url);
-                    Console.WriteLine("received_events_url: {0}", received_events_url);
-                    Console.WriteLine("type: {0}", type);
-                    Console.WriteLine("site_admin: {0}", site_admin);
-                    Console.WriteLine("name: {0}", name);
-                    Console.WriteLine("company: {0}", company);
-                    Console.WriteLine("blog: {0}", blog);
-                    Console.WriteLine("location: {0}", location);
-                    Console.WriteLine("email: {0}", email);
-                    Console.WriteLine("hireable: {0}", hireable);
-                    Console.WriteLine("bio: {0}", bio);
-                    Console.WriteLine("public_repos: {0}", public_repos);
-                    Console.WriteLine("public_gists: {0}", public_gists);
-                    Console.WriteLine("followers: {0}", followers);
-                    Console.WriteLine("following: {0}", following);
-                    Console.WriteLine("created_at: {0}", created_at);
-                    Console.WriteLine("updated_at: {0}", updated_at);
 
-                
+                Console.WriteLine("login: {0}", login);
+                Console.WriteLine("id: {0}", id);
+                Console.WriteLine("node_id: {0}", node_id);
+                Console.WriteLine("avatar_url: {0}", avatar_url);
+                Console.WriteLine("gravatar_id: {0}", gravatar_id);
+                Console.WriteLine("url: {0}", url);
+                Console.WriteLine("followers_url: {0}", followers_url);
+                Console.WriteLine("following_url: {0}", following_url);
+                Console.WriteLine("gists_url: {0}", gists_url);
+                Console.WriteLine("starred_url: {0}", starred_url);
+                Console.WriteLine("organizations_url: {0}", organizations_url);
+                Console.WriteLine("repos_url: {0}", repos_url);
+                Console.WriteLine("events_url: {0}", events_url);
+                Console.WriteLine("received_events_url: {0}", received_events_url);
+                Console.WriteLine("type: {0}", type);
+                Console.WriteLine("site_admin: {0}", site_admin);
+                Console.WriteLine("name: {0}", name);
+                Console.WriteLine("company: {0}", company);
+                Console.WriteLine("blog: {0}", blog);
+                Console.WriteLine("location: {0}", location);
+                Console.WriteLine("email: {0}", email);
+                Console.WriteLine("hireable: {0}", hireable);
+                Console.WriteLine("bio: {0}", bio);
+                Console.WriteLine("public_repos: {0}", public_repos);
+                Console.WriteLine("public_gists: {0}", public_gists);
+                Console.WriteLine("followers: {0}", followers);
+                Console.WriteLine("following: {0}", following);
+                Console.WriteLine("created_at: {0}", created_at);
+                Console.WriteLine("updated_at: {0}", updated_at);
+
+
 
 
             }
             catch (Exception e)
             {
 
-                Console.WriteLine("Please Enter User Name");
+                Console.WriteLine(e.Message);
             }
         }
     }
@@ -145,7 +146,7 @@ namespace Exemple_2
         static void Main(string[] args)
         {
             Console.WriteLine("Please Enter User Name");
-            string s= Console.ReadLine();
+            string s = Console.ReadLine();
             string Url = $"https://api.github.com/users/{s}";
             Task<string> task = null;
 
@@ -165,16 +166,25 @@ namespace Exemple_2
                     Console.WriteLine("Opertion Complated!!");
                     Console.ForegroundColor = ConsoleColor.White;
                 }
-                GitHubUser gitHubUser = JsonConvert.DeserializeObject<GitHubUser>(task.Result);
-                gitHubUser.CallGithubUzer();
+                GitHubUser GitHubUsers = JsonConvert.DeserializeObject<GitHubUser>(task.Result);
+                GitHubUsers.CallGithubUzer();
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }
+            GitHubUser gitHubUser = new GitHubUser();
+            string folowersUrl = $" https://api.github.com/users/{s}/followers";
+            Task<string> vs = GetDataFromUrl(folowersUrl);
 
+            FolowerUsers folowerUsers = new FolowerUsers();
+            FolowerUsers [] folowerU = JsonConvert.DeserializeObject<FolowerUsers[]>(vs.Result);
+            foreach (var item in folowerU)
+            {
+                folowerUsers.CallfolowUser( );
+            }
 
-
+            
             ///Task<string> d = Method(Url);
             //d.Wait();
             //GitHubUser gitHubUser = new GitHubUser();
