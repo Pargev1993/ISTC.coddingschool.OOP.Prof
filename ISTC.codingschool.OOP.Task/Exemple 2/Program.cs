@@ -48,7 +48,7 @@ namespace Exemple_2
         public DateTime created_at { get; set; }
         public DateTime updated_at { get; set; }
 
-        public void CallGithubUzer( )
+        public void CallGithubUzer()
         {
 
             Console.Clear();
@@ -173,18 +173,24 @@ namespace Exemple_2
             {
                 Console.WriteLine(e.Message);
             }
-            GitHubUser gitHubUser = new GitHubUser();
             string folowersUrl = $" https://api.github.com/users/{s}/followers";
             Task<string> vs = GetDataFromUrl(folowersUrl);
-
+            Console.ForegroundColor = (ConsoleColor)new Random().Next(1, 15);
+            Console.WriteLine("If You Want to see Aboute All Folowears Press Any Key!");
+            Console.ReadLine();
             FolowerUsers folowerUsers = new FolowerUsers();
-            FolowerUsers [] folowerU = JsonConvert.DeserializeObject<FolowerUsers[]>(vs.Result);
+            FolowerUsers[] folowerU = JsonConvert.DeserializeObject<FolowerUsers[]>(vs.Result);
             foreach (var item in folowerU)
             {
-                folowerUsers.CallfolowUser( );
+                item.CallfolowUser();
+
+                Console.WriteLine(new string('*', 50));
+                Console.ForegroundColor = (ConsoleColor)new Random().Next(1,15);
+                Console.WriteLine("Fore Else Press Any Key");
+                Console.ReadLine();
             }
 
-            
+
             ///Task<string> d = Method(Url);
             //d.Wait();
             //GitHubUser gitHubUser = new GitHubUser();
