@@ -49,13 +49,11 @@ namespace Exemple_2
 
         public void CallGithubUzer()
         {
-            Console.WriteLine("Please Enter Uzer Name 'Pargev' ");
-            string Name = Console.ReadLine();
+            
             Console.Clear();
             try
             {
-                if (Name == "Pargev")
-                {
+                
                     Console.WriteLine("login: {0}", login);
                     Console.WriteLine("id: {0}", id);
                     Console.WriteLine("node_id: {0}", node_id);
@@ -86,7 +84,7 @@ namespace Exemple_2
                     Console.WriteLine("created_at: {0}", created_at);
                     Console.WriteLine("updated_at: {0}", updated_at);
 
-                }
+                
 
 
             }
@@ -146,7 +144,9 @@ namespace Exemple_2
 
         static void Main(string[] args)
         {
-            string Url = "https://api.github.com/users/Pargev1993";
+            Console.WriteLine("Please Enter User Name");
+            string s= Console.ReadLine();
+            string Url = $"https://api.github.com/users/{s}";
             Task<string> task = null;
 
             try
