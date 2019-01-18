@@ -91,7 +91,7 @@ namespace Exemple_2
             catch (Exception e)
             {
 
-                Console.WriteLine("Please Enter Name 'Pargev!'");
+                Console.WriteLine("Please Enter User Name");
             }
         }
     }
