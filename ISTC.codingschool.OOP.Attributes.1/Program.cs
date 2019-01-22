@@ -21,6 +21,7 @@ namespace ISTC.codingschool.OOP.Attributes._1
             Console.WriteLine(natureAttribute.Season);
             Console.WriteLine(natureAttribute.Year);
             Console.WriteLine(natureAttribute.Color);
+            Console.WriteLine(natureAttribute.GetType());
         }
     }
 }
