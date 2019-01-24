@@ -8,14 +8,25 @@ namespace BoubleSort
 {
     class Program
     {
+
         static void Main(string[] args)
         {
+            BoubleSort();
+
+          
+        }
+        
+        public static void BoubleSort()
+        {
             Random random = new Random();
+
             int[] array = new int[1000];
             for (int i = 0; i < array.Length; i++)
             {
                 array[i] = random.Next(1, 1000);
             }
+           
+
             bool C;
             do
             {
@@ -27,18 +38,16 @@ namespace BoubleSort
                         Swap(ref array[i], ref array[i + 1]);
                         C = true;
                     }
-                    
+
                 }
-
-
             } while (C);
-
             for (int i = 0; i < array.Length; i++)
             {
                 Console.WriteLine(array[i]);
             }
-            Console.ReadKey();
+
         }
+
         public static void Swap(ref int x, ref int y)
         {
             int c = x;
