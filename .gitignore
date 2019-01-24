@@ -260,3 +260,5 @@ paket-files/
 __pycache__/
 *.pyc
 /ISTC.codingschool.OOP.Reflection1/Properties/AssemblyInfo.cs
+/ISTC.codingschool.OOP.Algoritms/SelectionSort/SelectionSort.csproj
+/ISTC.codingschool.OOP.Algoritms/SelectionSort

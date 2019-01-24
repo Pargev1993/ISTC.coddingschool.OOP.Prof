@@ -5,44 +5,39 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 
-namespace Insert_sort
+namespace SelectionSort
 {
     class Program
     {
-       
-     public static   void insertionSort()
+        public static void InsertShort()
         {
-            int n = 1000;
             int[] arr = new int[1000];
-            for (int l = 0; l < arr.Length; l++)
+            Random random = new Random();
+            for (int i = 0; i < arr.Length; i++)
             {
-                arr[l] = new Random().Next(1, 1000);
+                arr[i] = random.Next(1, 1000);
                 Thread.Sleep(10);
-                
-            }
-            
-            for (int  i = 1; i < n; i++)
-            {
-               int key = arr[i];
-               int j = i - 1;
 
-               
-                while (j >= 0 && arr[j] > key)
-                {
-                    arr[j + 1] = arr[j];
-                    j = j - 1;
-                }
-                arr[j + 1] = key;
             }
-            for (int k = 0; k < arr.Length; k++)
+            for (int j = 1; j < arr.Length; j++)
             {
-                Console.WriteLine(arr[k]);
+                int key = arr[j];
+                int s = j - 1;
+                while (s >= 0 && arr[s] > key)
+                {
+                    arr[s + 1] = arr[s];
+                    s = s - 1;
+                }
+                arr[s + 1] = key;
+            }
+            for (int y = 0; y < arr.Length; y++)
+            {
+                Console.WriteLine(arr[y]);
             }
         }
         static void Main(string[] args)
         {
-
-            insertionSort();
+            InsertShort();
         }
     }
 }

@@ -57,6 +57,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoubleSort", "ISTC.codingsc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insert sort", "ISTC.codingschool.OOP.Algoritms\Insert sort\Insert sort.csproj", "{538F8759-B225-443E-AFC2-2CEAFDDC9CD3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectionSort", "ISTC.codingschool.OOP.Algoritms\SelectionSort\SelectionSort.csproj", "{9A715EC0-EB15-43B3-BDAD-3F5695B28E57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +149,10 @@ Global
 		{538F8759-B225-443E-AFC2-2CEAFDDC9CD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{538F8759-B225-443E-AFC2-2CEAFDDC9CD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{538F8759-B225-443E-AFC2-2CEAFDDC9CD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A715EC0-EB15-43B3-BDAD-3F5695B28E57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A715EC0-EB15-43B3-BDAD-3F5695B28E57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A715EC0-EB15-43B3-BDAD-3F5695B28E57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A715EC0-EB15-43B3-BDAD-3F5695B28E57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -165,6 +171,7 @@ Global
 		{674FE5AE-1B44-4D79-BD7E-D9DF95153136} = {A232D34E-F682-4AE7-9A0D-C22C5E6AA2E7}
 		{36181374-17C8-43B1-B372-857BADD4957E} = {6C670191-030D-4414-A7FB-58A418E03440}
 		{538F8759-B225-443E-AFC2-2CEAFDDC9CD3} = {6C670191-030D-4414-A7FB-58A418E03440}
+		{9A715EC0-EB15-43B3-BDAD-3F5695B28E57} = {6C670191-030D-4414-A7FB-58A418E03440}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3AA24A9-8C58-4581-9EE0-A6728A2AD5BC}
