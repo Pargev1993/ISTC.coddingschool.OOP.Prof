@@ -59,6 +59,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insert sort", "ISTC.codings
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertSort", "ISTC.codingschool.OOP.Algoritms\InsertSort\InsertSort.csproj", "{184385AC-A522-4671-A0EB-B7D6F2AFB82E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionDll", "ReflectionDll\ReflectionDll.csproj", "{59EB8CC9-060E-49A0-B606-CE644FFA8A2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{184385AC-A522-4671-A0EB-B7D6F2AFB82E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{184385AC-A522-4671-A0EB-B7D6F2AFB82E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{184385AC-A522-4671-A0EB-B7D6F2AFB82E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59EB8CC9-060E-49A0-B606-CE644FFA8A2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59EB8CC9-060E-49A0-B606-CE644FFA8A2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59EB8CC9-060E-49A0-B606-CE644FFA8A2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59EB8CC9-060E-49A0-B606-CE644FFA8A2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
