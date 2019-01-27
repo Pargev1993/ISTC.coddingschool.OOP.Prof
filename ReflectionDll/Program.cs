@@ -36,7 +36,7 @@ namespace ReflectionDll
                
             }
 
-            MethodInfo[] methodInfo = type.InvokeMember();
+            
          
         }
         
