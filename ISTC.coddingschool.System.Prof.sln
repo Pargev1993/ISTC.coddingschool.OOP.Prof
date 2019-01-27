@@ -63,6 +63,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionDll", "Reflection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.codingschool.OOP.job links", "ISTC.codingschool.OOP.job links\ISTC.codingschool.OOP.job links.csproj", "{3DA91B8C-3B34-4C92-A1E5-B40368846478}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ISTC.codingschool.OOP.Staff.am", "ISTC.codingschool.OOP.Staff.am", "{59E4E9FE-0620-46C6-9266-0F3D4D6A2DC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Staff.am Project", "ISTC.codingschool.OOP.Staff.am\Staff.am Project\Staff.am Project.csproj", "{E03FF345-A783-44DE-B7F3-2B9CE082728E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +169,10 @@ Global
 		{3DA91B8C-3B34-4C92-A1E5-B40368846478}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DA91B8C-3B34-4C92-A1E5-B40368846478}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DA91B8C-3B34-4C92-A1E5-B40368846478}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E03FF345-A783-44DE-B7F3-2B9CE082728E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E03FF345-A783-44DE-B7F3-2B9CE082728E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E03FF345-A783-44DE-B7F3-2B9CE082728E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E03FF345-A783-44DE-B7F3-2B9CE082728E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -184,6 +192,7 @@ Global
 		{36181374-17C8-43B1-B372-857BADD4957E} = {6C670191-030D-4414-A7FB-58A418E03440}
 		{538F8759-B225-443E-AFC2-2CEAFDDC9CD3} = {6C670191-030D-4414-A7FB-58A418E03440}
 		{184385AC-A522-4671-A0EB-B7D6F2AFB82E} = {6C670191-030D-4414-A7FB-58A418E03440}
+		{E03FF345-A783-44DE-B7F3-2B9CE082728E} = {59E4E9FE-0620-46C6-9266-0F3D4D6A2DC6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3AA24A9-8C58-4581-9EE0-A6728A2AD5BC}

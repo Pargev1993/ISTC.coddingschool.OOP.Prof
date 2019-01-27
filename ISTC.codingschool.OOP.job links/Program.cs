@@ -8,13 +8,65 @@ using System.Net;
 using System.IO;
 using Newtonsoft.Json;
 using System.Net.Http;
-using System.Reflection;
+using ISTC.codingschool.OOP.job_links;
 
 namespace Exemple_2
 {
-
     class Program
     {
+        public static void Print(List<Jobs> companies)
+        {
+            Parallel.ForEach(companies, (company) =>
+            {
+                Console.WriteLine($"Company Name:{company.Name},Id:{company.Id}\n");
+
+            });
+        }
+
+        public static async void Run(string url, CancellationToken cToken)
+        {
+            try
+            {
+                string result = await Task.Run(() => Call.GetDataAsync(url, cToken));
+                List<Jobs> companies = null;
+
+                await Task.Run(() =>
+                {
+                    if (cToken.IsCancellationRequested)
+                    {
+                        Console.WriteLine("Operation Aborted");
+                        return;
+                    }
+                    companies = JsonConvert.DeserializeObject<List<Jobs>>(result);
+                });
+
+                Print(companies);
+            }
+            catch (ArgumentNullException arg) { Console.WriteLine(arg.Message); }
+            catch (Exception e) { Console.WriteLine(e.Message); }
+
+
+        }
+
+        static void Main(string[] args)
+        {
+            string url = "https://www.itjobs.am/api/v1.0/companies";
+            CancellationTokenSource tokenSource = new CancellationTokenSource();
+            CancellationToken token = tokenSource.Token;
+
+            try
+            {
+                Run(url, token);
+                Console.WriteLine("Input 'c' for Abort");
+                if (Console.ReadKey().KeyChar == 'c')
+                    tokenSource.Cancel();
+            }
+            catch (Exception e) { Console.WriteLine(e.Message); }
+
+
+
+            Console.ReadLine();
+        }
         static string GetDataFromURL(object url)
         {
             try
@@ -40,36 +92,6 @@ namespace Exemple_2
                 throw new Exception(e.Message);
             }
 
-
-        }
-        public async static Task<string> GetDataFromUrl(string Url)
-        {
-            try
-            {
-                return await Task<string>.Factory.StartNew(GetDataFromURL, Url);
-            }
-            catch (AggregateException ae)
-            {
-
-                throw new AggregateException(ae.Message);
-            }
-
-        }
-        public async static Task<string> GetJsonConvert(string Url)
-        {
-            
-
-
-            File.WriteAllText("person.json", Url);
-            return await Task<string>.Factory.StartNew(GetDataFromURL, Url);
-        }
-        static void Main(string[] args)
-        {
-            string Url ="https://www.itjobs.am/api/v1.0/companies";
-            Task<string> task = null;
-            task = GetJsonConvert(Url);
-            
-            
 
         }
     }
