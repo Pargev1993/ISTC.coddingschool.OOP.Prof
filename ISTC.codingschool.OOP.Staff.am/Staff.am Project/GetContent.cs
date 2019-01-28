@@ -28,10 +28,9 @@ namespace Staff.am_Project
                     var urlcomp = splited.Substring(6, splited.Length - 7);
                     companyUrl.Add(@"https://staff.am" + urlcomp);
                 }
-                catch (Exception e)
+                catch (Exception )
                 {
 
-                    Console.WriteLine(e.Message) ;
                 }
 
             }
@@ -62,10 +61,9 @@ namespace Staff.am_Project
                     company.Adress = htmlNode[5].InnerText;
                     company.AboutCompany = aboutText;
                 }
-                catch (Exception e)
+                catch (Exception )
                 {
 
-                    Console.WriteLine(e.Message);
                 }
                 companies.Add(company);
                 company.Print();

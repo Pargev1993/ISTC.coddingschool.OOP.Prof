@@ -50,6 +50,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CallChromeDriver.cs" />
     <Compile Include="Company.cs" />
     <Compile Include="GetContent.cs" />
     <Compile Include="Program.cs" />

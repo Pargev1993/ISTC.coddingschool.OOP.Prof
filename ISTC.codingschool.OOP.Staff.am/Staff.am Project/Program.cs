@@ -18,7 +18,9 @@ namespace Staff.am_Project
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
+
             string CompanyUrl = "https://staff.am/en/companies";
+
             List<Company> companies= GetContent.GetContentMethod(CompanyUrl);
             Console.ReadKey();
         }
