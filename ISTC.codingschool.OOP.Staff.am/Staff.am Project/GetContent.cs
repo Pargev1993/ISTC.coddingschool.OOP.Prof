@@ -15,9 +15,33 @@ namespace Staff.am_Project
         {
 
             HtmlWeb htmlWeb = new HtmlWeb();
-            HtmlDocument htmlDocument = htmlWeb.Load(CompanyUrl);
+            string PatheForChrome = @"C:\Users\pqoal\source\repos\ISTC.coddingschool.OOP.Prof\ISTC.codingschool.OOP.Staff.am\Staff.am Project\bin\Debug";
+            ChromeOptions co = new ChromeOptions();
+            co.AddArgument("--disable-images");
+            ChromeDriver chromeDriver = new ChromeDriver(PatheForChrome, co);
+            chromeDriver.Navigate().GoToUrl(CompanyUrl);
+            for (int i = 0; i < 2; i++)
+            {
+                try
+                {
+                    chromeDriver.ExecuteScript($"window.scrollBy(0,1750);");
+                }
+                catch (Exception)
+                {
+
+                }
+
+                Thread.Sleep(2000);
+
+            }
+
+            var htmldoc = new HtmlDocument();
+
+            htmldoc.LoadHtml(chromeDriver.PageSource);
+            chromeDriver.Close();
+            //HtmlDocument htmlDocument = htmlWeb.Load(CompanyUrl);
             string Path = "//div[@class='company-action company_inner_right']";
-            HtmlNodeCollection htmlNodes = htmlDocument.DocumentNode.SelectNodes(Path);
+            HtmlNodeCollection htmlNodes = htmldoc.DocumentNode.SelectNodes(Path);
             List<string> companyUrl = new List<string>();
             foreach (var Htmlnode in htmlNodes)
             {
@@ -28,7 +52,7 @@ namespace Staff.am_Project
                     var urlcomp = splited.Substring(6, splited.Length - 7);
                     companyUrl.Add(@"https://staff.am" + urlcomp);
                 }
-                catch (Exception )
+                catch (Exception)
                 {
 
                 }
@@ -45,10 +69,10 @@ namespace Staff.am_Project
                 string companyProp = "//div[@class='col-lg-8 col-md-8 about-text']";
                 HtmlNodeCollection htmlNodesAboutComp = document.DocumentNode.SelectNodes(companyProp);
                 string aboutText = htmlNodesAboutComp[0].InnerText.Replace("\n", "");
-
+                string about = aboutText.Substring(0, aboutText.Length - 16);
                 string companyName = "//h1[@class=\"text-left\"]";
                 HtmlNodeCollection htmlNodeOfName = document.DocumentNode.SelectNodes(companyName);
-               
+
                 Company company = new Company();
                 try
                 {
@@ -59,11 +83,15 @@ namespace Staff.am_Project
                     company.Data = htmlNode[3].InnerText;
                     company.WebSite = htmlNode[4].InnerText;
                     company.Adress = htmlNode[5].InnerText;
-                    company.AboutCompany = aboutText;
+                    company.AboutCompany = about;
                 }
-                catch (Exception )
+                catch (Exception)
                 {
 
+                }
+                finally
+                {
+                    company.AboutCompany = about;
                 }
                 companies.Add(company);
                 company.Print();
