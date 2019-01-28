@@ -31,3 +31,5 @@
 ## :pushpin: HTML Scrolling
 |C#|
 |[Satff.am](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ISTC.codingschool.OOP.Staff.am/Staff.am%20Project)|
+|[:While_check_mark:](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ISTC.codingschool.OOP.Staff.am/Staff.am%20Project)
+
