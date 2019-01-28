@@ -1,1 +1,1 @@
-# JavaScript-Essential
+### The Garbisch Collection 
