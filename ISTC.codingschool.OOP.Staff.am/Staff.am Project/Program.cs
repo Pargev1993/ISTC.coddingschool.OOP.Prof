@@ -18,6 +18,11 @@ namespace Staff.am_Project
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
+<<<<<<< HEAD
+            string CompanyUrl = "https://staff.am/en/companies";
+          List <Company> companies=  GetContent.GetContentMethod(CompanyUrl);
+            
+=======
 
             //string Url = "https://staff.am/en/companies?CompaniesFilter%5BkeyWord%5D=&CompaniesFilter%5Bindustries%5D=&CompaniesFilter%5Bindustries%5D%5B%5D=2&CompaniesFilter%5Bemployees_number%5D=&CompaniesFilter%5Bsort_by%5D=&CompaniesFilter%5Bhas_job%5D=";
             string Url = "https://staff.am/en/jobs";
@@ -54,6 +59,7 @@ namespace Staff.am_Project
                 // Console.WriteLine(item.InnerHtml);
             }
             Console.WriteLine($"Alsow Find {nodecollection.Count}");
+>>>>>>> 69d870d7038a24f63837949bb16e97a0d308bd5e
             Console.ReadKey();
         }
     }
