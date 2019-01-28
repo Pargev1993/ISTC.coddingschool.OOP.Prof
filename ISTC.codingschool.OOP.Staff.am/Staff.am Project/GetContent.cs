@@ -20,7 +20,7 @@ namespace Staff.am_Project
             co.AddArgument("--disable-images");
             ChromeDriver chromeDriver = new ChromeDriver(PatheForChrome, co);
             chromeDriver.Navigate().GoToUrl(CompanyUrl);
-            for (int i = 0; i < 2; i++)
+            for (int i = 0; i < 100; i++)
             {
                 try
                 {
