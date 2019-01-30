@@ -11,6 +11,12 @@ namespace Staff.am_Project
 {
     class GetContent
     {
+        public static async Task<List<Company>> GetContentMethodAsync(string url)
+        {
+            return await Task.Run(() => GetContentMethod(url));
+
+        }
+
         public static List<Company> GetContentMethod(string CompanyUrl)
         {
 
@@ -18,9 +24,11 @@ namespace Staff.am_Project
             string PatheForChrome = @"C:\Users\pqoal\source\repos\ISTC.coddingschool.OOP.Prof\ISTC.codingschool.OOP.Staff.am\Staff.am Project\bin\Debug";
             ChromeOptions co = new ChromeOptions();
             co.AddArgument("--disable-images");
+            method();
+           
             ChromeDriver chromeDriver = new ChromeDriver(PatheForChrome, co);
             chromeDriver.Navigate().GoToUrl(CompanyUrl);
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 2; i++)
             {
                 try
                 {
@@ -62,6 +70,10 @@ namespace Staff.am_Project
 
             foreach (var Urls in companyUrl)
             {
+                method();
+
+
+
                 HtmlDocument document = htmlWeb.Load(Urls);
                 string jobPath = "//p[@class='professional-skills-description']";
                 HtmlNodeCollection htmlNode = document.DocumentNode.SelectNodes(jobPath);
@@ -95,16 +107,33 @@ namespace Staff.am_Project
                 }
                 companies.Add(company);
                 company.Print();
+
                 Thread.Sleep(5000);
                 Console.Clear();
+                Thread.Sleep(300);
+
             }
 
             return companies;
 
 
         }
+        public static void method()
+        {
 
+            
+                Console.Write("Loading");
+                for (int i = 0; i < 5; i++)
+                {
+                    Console.Write(".");
+                    Thread.Sleep(500);
+                }
+                Console.Clear();
 
-
+           
+        }
     }
 }
+
+
+

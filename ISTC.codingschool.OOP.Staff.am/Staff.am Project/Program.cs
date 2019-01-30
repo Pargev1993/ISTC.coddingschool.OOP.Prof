@@ -14,14 +14,16 @@ using OpenQA.Selenium.Chrome;
 namespace Staff.am_Project
 {
     class Program
-    {
+
+    { 
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 
             string CompanyUrl = "https://staff.am/en/companies";
 
-            List<Company> companies= GetContent.GetContentMethod(CompanyUrl);
+            Task<List<Company>> companies = GetContent.GetContentMethodAsync(CompanyUrl);
+          
             Console.ReadKey();
         }
     }
