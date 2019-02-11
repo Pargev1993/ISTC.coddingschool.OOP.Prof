@@ -10,31 +10,20 @@ namespace Exemple_14
     {
         public static int[] alternatingSums(int[] a)
         {
-            int t = 0;
-            int d = 0;
-            int s = 0;
-            if ((a.Length/2)%2!=0 && a.Length/2!=1)
+            int sd = 0;
+            int ka = 0;
+            for (int i = 0; i < a.Length; i++)
             {
-                s = a.Length / 2 + 1;
+                if(i==0 && i%2==0)
+                {
+                    ka += a[i];
+                }
+                else
+                {
+                    sd += a[i];
+                }
             }
-            else
-            {
-                s = a.Length / 2;
-            }
-            
-            for (int i = 0; i <s; i++)
-            {
-                t += a[i];
-              
-                Console.WriteLine(t);
-            }
-            for (int j = s;j<a.Length ; j++)
-            {
-                d += a[j];
-               
-                Console.WriteLine(d);
-            }
-            int[] b = { t, d };
+            int[] b = { sd, ka };
             return b;
         }
         static void Main(string[] args)
