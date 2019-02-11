@@ -75,6 +75,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INTRO.Exemple12", "CodeSign
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exemple 13", "CodeSignal\Exemple 13\Exemple 13.csproj", "{77EDA29B-2FD0-4F36-8339-287BE1ED57D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exemple 14", "CodeSignal\Exemple 14\Exemple 14.csproj", "{559BF931-BCBC-4885-8DFC-5C0A973CFBE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -193,6 +195,10 @@ Global
 		{77EDA29B-2FD0-4F36-8339-287BE1ED57D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77EDA29B-2FD0-4F36-8339-287BE1ED57D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77EDA29B-2FD0-4F36-8339-287BE1ED57D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{559BF931-BCBC-4885-8DFC-5C0A973CFBE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{559BF931-BCBC-4885-8DFC-5C0A973CFBE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{559BF931-BCBC-4885-8DFC-5C0A973CFBE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{559BF931-BCBC-4885-8DFC-5C0A973CFBE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -216,6 +222,7 @@ Global
 		{E03FF345-A783-44DE-B7F3-2B9CE082728E} = {59E4E9FE-0620-46C6-9266-0F3D4D6A2DC6}
 		{936E1121-93C7-45A1-9615-BA97D8B10ECC} = {98D826D7-0F96-4ABC-B4B9-455D9CCB3676}
 		{77EDA29B-2FD0-4F36-8339-287BE1ED57D9} = {98D826D7-0F96-4ABC-B4B9-455D9CCB3676}
+		{559BF931-BCBC-4885-8DFC-5C0A973CFBE5} = {98D826D7-0F96-4ABC-B4B9-455D9CCB3676}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3AA24A9-8C58-4581-9EE0-A6728A2AD5BC}
