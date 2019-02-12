@@ -79,6 +79,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exemple 14", "CodeSignal\Ex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intro exemple 15", "CodeSignal\Intro exemple 15\Intro exemple 15.csproj", "{B979937B-7361-425D-B268-3B817F163AFA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exemple 16", "CodeSignal\Exemple 16\Exemple 16.csproj", "{F39690F9-7278-41C0-81AE-946AFFE7658F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -205,6 +207,10 @@ Global
 		{B979937B-7361-425D-B268-3B817F163AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B979937B-7361-425D-B268-3B817F163AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B979937B-7361-425D-B268-3B817F163AFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F39690F9-7278-41C0-81AE-946AFFE7658F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F39690F9-7278-41C0-81AE-946AFFE7658F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F39690F9-7278-41C0-81AE-946AFFE7658F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F39690F9-7278-41C0-81AE-946AFFE7658F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -230,6 +236,7 @@ Global
 		{77EDA29B-2FD0-4F36-8339-287BE1ED57D9} = {98D826D7-0F96-4ABC-B4B9-455D9CCB3676}
 		{559BF931-BCBC-4885-8DFC-5C0A973CFBE5} = {98D826D7-0F96-4ABC-B4B9-455D9CCB3676}
 		{B979937B-7361-425D-B268-3B817F163AFA} = {98D826D7-0F96-4ABC-B4B9-455D9CCB3676}
+		{F39690F9-7278-41C0-81AE-946AFFE7658F} = {98D826D7-0F96-4ABC-B4B9-455D9CCB3676}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3AA24A9-8C58-4581-9EE0-A6728A2AD5BC}
