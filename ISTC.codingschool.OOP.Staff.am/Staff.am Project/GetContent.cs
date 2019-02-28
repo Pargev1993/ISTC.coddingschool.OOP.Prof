@@ -129,7 +129,6 @@ namespace Staff.am_Project
                     Thread.Sleep(500);
                 }
                 Console.Clear();
-
            
         }
     }

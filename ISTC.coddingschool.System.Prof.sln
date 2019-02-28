@@ -105,6 +105,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegate.Exemple 1", "ISTC.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegate.Actions", "ISTC.Codingschool.OOP.Delegates\Delegate.Action\Delegate.Actions.csproj", "{A23C7C82-1450-4CE9-8C7B-2D69C5DFBAC2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.codingschool.OOP.VirtualOveride", "ISTC.codingschool.OOP.VirtualOveride\ISTC.codingschool.OOP.VirtualOveride.csproj", "{06E5BB2E-66F4-4343-8388-0B7C235FB724}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -275,6 +277,10 @@ Global
 		{A23C7C82-1450-4CE9-8C7B-2D69C5DFBAC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A23C7C82-1450-4CE9-8C7B-2D69C5DFBAC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A23C7C82-1450-4CE9-8C7B-2D69C5DFBAC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06E5BB2E-66F4-4343-8388-0B7C235FB724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06E5BB2E-66F4-4343-8388-0B7C235FB724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06E5BB2E-66F4-4343-8388-0B7C235FB724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06E5BB2E-66F4-4343-8388-0B7C235FB724}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
