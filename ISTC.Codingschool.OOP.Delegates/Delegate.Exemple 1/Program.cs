@@ -16,8 +16,7 @@ namespace Delegate.Exemple_1
             ArrayDel arrayDel;
             ArrayDel array = OperationWithArray.GetPairsNumbers;
             arrayDel = array;
-            arrayDel += OperationWithArray.GetOddNumbers;
-
+            arrayDel+=OperationWithArray.GetOddNumbers;
             arrayDel(ref num);
 
         }
